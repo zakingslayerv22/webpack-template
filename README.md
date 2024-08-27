@@ -3,3 +3,16 @@ The project takes us through the workflow for ES6 modules and bundling with Webp
 I'll keep in touch by God's Grace.
 
 On y va!
+
+Clean up files
+
+Remove unneeded files.
+Reset the index.html to
+boilerplate. Clear the
+index.css and leave only 
+basic resets. Clear the
+index.js so that it only
+imports the css. 
+
+Add the dist directory 
+to gitignore.

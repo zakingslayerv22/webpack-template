@@ -1,0 +1,130 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    /* border: 1px solid salmon; */
+}
+
+body {
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    gap: 3.55rem;
+    color: whitesmoke;
+    background-color: #E5E7EB;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+    
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+}
+
+.nav-title {
+    align-self: center;
+}
+
+#nav-items {
+    display: flex;
+    gap: 1.1rem
+}
+
+button {
+    border-radius: 10px;     
+}
+
+#nav-items > button {
+    font-size: 1.1rem;
+    padding: 0.5rem 0.8rem;
+    background-color: #1F2937;
+    color: whitesmoke;
+}
+
+#nav-items > button:hover {
+    background-color: #E5E7EB;
+    color: #1F2937;;
+}
+
+
+nav, .footer {
+    padding: 2.76rem;
+    background-color: #1F2937;
+}
+
+.footer {
+    text-align: center;
+}
+
+.home-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+    padding: 0rem 2.5rem;
+}
+
+.hero-text-container {
+    display: grid;
+    gap: 0.3rem;
+    font-size: 1.2rem;
+}
+
+.hero-button {
+    margin-top: 1rem;
+    padding: 1rem 1.3rem;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: whitesmoke;
+    background-color: #3882F6;
+}
+
+.hero-button:hover {
+    background-color: #1F2937;;
+}
+
+.hero-left-container, .hero-image-container {
+    flex-basis: 400px;
+}
+
+.hero-image {
+    width: 100%;
+    border-radius: 20px;
+}
+
+
+#content {
+    color: #333333;
+}
+
+@media screen and (max-width: 550px) {
+    /* CSS styles for small screens - less than 550px*/
+    body {
+        gap: 2.6rem;
+    }
+
+    nav {    
+        display: grid;
+        place-content: center;
+        gap: 1.85rem;
+    }
+
+    .nav-title {
+        justify-self: center;
+    }
+
+    button {
+        font-size: 0.9rem;
+        padding: 0.5rem 0.8rem;
+    }
+
+    .hero-button {
+        padding: 0.8rem 1.1rem;
+        font-size: 1.07rem;
+    }
+
+    .hero-left-container {
+        display: grid;
+        text-align: center;
+    }
+}
